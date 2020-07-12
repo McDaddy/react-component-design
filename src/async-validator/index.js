@@ -25,6 +25,6 @@ validator
   .then(() => {
     console.log("pass");
   })
-  .catch(errors => {
-    console.log(errors);
+  .catch(({ errors }) => {
+    console.log("not pass", errors);
   });
